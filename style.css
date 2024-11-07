@@ -1,0 +1,121 @@
+:root{
+    --cor-principal: #49d649;
+    --cor-secundaria: #f2f2f2;
+    --cor-um: #7fc8f8;
+    --cor-dois: #ff7b7b;
+    --cor-fundo: #2e2e2e;
+}
+body{
+    color: var(--cor-principal);
+    background-color: var(--cor-fundo);
+}
+
+header{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+header button{
+    font-size: 1.5em;
+    background-color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+    border-radius: 1rem;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+    transition: 0.15s;
+    position: absolute;
+    right: 5rem;
+    top: 5rem;
+}
+
+header button:hover{
+    transform: scale(1.1);
+    background-color: #58f558;
+}
+
+#config{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+#config input{
+    width: 25rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-principal);
+    border-radius: 1rem;
+    color: var(--cor-secundaria);
+}
+
+#config button{
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+    border-radius: 1rem;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+#config button:hover{
+    transform: scale(1.1);
+    background-color: #58f558;
+}
+
+main{
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#jogo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: top;
+    justify-content: center;
+}
+
+#jogo button{
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-principal);;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+#jogo button:hover{
+    transform: scale(1.1);
+    background-color: var(--cor-secundaria);
+}
+
+.play-again{
+    position: absolute;
+    z-index: 50;
+    top:10vh;
+    left: 10vw;
+    background-color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.play-again:hover{
+    transform: scale(1.1);
+    background-color: #58f558;
+}

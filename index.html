@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+    <header>
+        <h1>Tic tac toe</h1>
+        <button onclick="change()">Change Thema</button>
+    </header>
+
+    <form id="config">
+        <div>
+            <label for="name1">Jogador 1:</label>
+            <input type="text" name="name1" id="name1" placeholder="Nome do jogador 1">
+        </div>
+        <div>
+            <label for="name2">Jogador 2:</label>
+            <input type="text" name="name2" id="name2" placeholder="Nome do jogador 2">
+        </div>
+        <button type="submit">Iniciar</button>
+    </form>
+
+    <main style="display: none">
+        <div>
+            <p>Status 1</p>
+        </div>
+        <div id="jogo">
+            <button id="1"></button>
+            <button id="2"></button>
+            <button id="3"></button>
+            <button id="4"></button>
+            <button id="5"></button>
+            <button id="6"></button>
+            <button id="7"></button>
+            <button id="8"></button>
+            <button id="9"></button>
+        </div>
+        <div>
+            <p>Status 2</p>
+        </div>
+        
+    </main>
+
+    
+</body>
+</html>
